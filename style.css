@@ -1,0 +1,72 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    table-layout: fixed;
+}
+
+header{
+    height: 150px;
+    line-height: 150px;
+    background-image: url(./img/pattern.png);
+    background-size: 20vw;
+    background-color: rgb(117, 117, 177);
+}
+
+#header-article {
+    
+}
+
+#header-title {
+
+}
+
+main, footer {
+    background-color: white;
+    margin-left: 20vw;
+    padding-right: 20vw;
+}
+
+/* lista */
+
+section .articolo p, section .articolo ul, section .articolo table{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+section .articolo ul {
+    list-style-position: inside;
+}
+
+/* tabella */
+
+thead {
+    background-color: rgba(0, 0, 255, 0.596);
+}
+
+tr #c1 #c2{
+    width: 25%;
+}
+
+tr #c3 {
+    width: 50%;
+}
+
+tbody tr:nth-child(2n+1) {background: rgba(41, 152, 172, 0.486)};
+tbody tr:nth-child(2n) {background: #e4e4e4};
+
+/* footer */
+
+.footer-img {
+    display: block;
+    position: relative;
+  }
+figcaption {
+   background: rgba(0, 0, 0, 0.5);
+   color: #FFF;
+   position: absolute;
+   top: 0;
+   bottom: 0;
+   left: 0;
+   right: 0;
+}
