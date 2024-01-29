@@ -5,36 +5,62 @@
     table-layout: fixed;
 }
 
-header{
+/* header */
+header {
+    line-height: 35px;
+    color: white;
+    text-shadow: 2px 2px 4px black;
     height: 150px;
-    line-height: 150px;
+    padding-left: 20vw;
+    padding-top: 50px;
     background-image: url(./img/pattern.png);
     background-size: 20vw;
-    background-color: rgb(117, 117, 177);
+    background-color: rgb(107, 146, 159);
 }
 
 #header-article {
-    
+    padding-left: 50px;
+    font-size: 50px;
 }
 
 #header-title {
-
+    font-size: 80px;
 }
 
-main, footer {
+/* main */
+main,
+footer {
     background-color: white;
-    margin-left: 20vw;
+    padding-left: 20vw;
     padding-right: 20vw;
 }
 
+.title .main-title {
+    font-size: 80px;
+}
+
+.title .main-subtitle,
+.title .date {
+    font-size: 35px;
+    color: grey;
+}
+
+.title .date{
+    font-size: 25px;
+}
+
+
 /* lista */
 
-section .articolo p, section .articolo ul, section .articolo table{
+.title,
+.articolo p,
+.articolo ul,
+.articolo table {
     margin-top: 20px;
     margin-bottom: 20px;
 }
 
-section .articolo ul {
+.articolo ul {
     list-style-position: inside;
 }
 
@@ -44,7 +70,7 @@ thead {
     background-color: rgba(0, 0, 255, 0.596);
 }
 
-tr #c1 #c2{
+tr #c1 #c2 {
     width: 25%;
 }
 
@@ -52,21 +78,43 @@ tr #c3 {
     width: 50%;
 }
 
-tbody tr:nth-child(2n+1) {background: rgba(41, 152, 172, 0.486)};
-tbody tr:nth-child(2n) {background: #e4e4e4};
+tbody tr:nth-child(2n+1) {
+    background: rgba(41, 152, 172, 0.486);
+}
+
+
+tbody tr:nth-child(2n) {
+    background: #e4e4e4;
+}
+
 
 /* footer */
 
-.footer-img {
-    display: block;
+footer * {
+padding-bottom: 10px;
+}
+
+footer .footer-title{
+    color: grey;
+    font-size: 20px;
+}
+
+footer figure {
     position: relative;
-  }
+    height: 250px;
+    width: 250px;
+}
+
+figure img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 figcaption {
-   background: rgba(0, 0, 0, 0.5);
-   color: #FFF;
-   position: absolute;
-   top: 0;
-   bottom: 0;
-   left: 0;
-   right: 0;
+    color: #FFF;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    right: 0;
 }
